@@ -7,10 +7,10 @@ Simple WebServer.
 Skeleton before making a simple web server.
 
 # Requirement
-* java version "1.8.0_92"
+* java version "1.8.0_111"
 
 # Usage
 * run  
 1.clone  
-2.run the project on your Eclipse.  
+2.run the project on your intellij.  
 3.Hit the command ./gradlew runat Application root directory.
