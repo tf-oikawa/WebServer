@@ -13,4 +13,4 @@ Skeleton before making a simple web server.
 * run  
 1.clone  
 2.run the project on your intellij.  
-3.Hit the command ./gradle test runat Application root directory.
+3.Hit the command `gradle test` runat Application root directory.
