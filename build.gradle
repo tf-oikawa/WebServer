@@ -1,4 +1,4 @@
-group 'web.apps'
+group 'jp.co.topgate.tami.web'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
