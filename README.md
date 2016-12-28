@@ -1,5 +1,5 @@
-[![CircleCI](https://circleci.com/gh/tami888/WebServer/tree/master.svg?style=svg)](https://circleci.com/gh/tami888/WebServer/tree/master)
-[![CircleCI](https://circleci.com/gh/tami888/WebServer/tree/develop.svg?style=svg)](https://circleci.com/gh/tami888/WebServer/tree/develop)
+master [![CircleCI](https://circleci.com/gh/tami888/WebServer/tree/master.svg?style=svg)](https://circleci.com/gh/tami888/WebServer/tree/master)
+develop [![CircleCI](https://circleci.com/gh/tami888/WebServer/tree/develop.svg?style=svg)](https://circleci.com/gh/tami888/WebServer/tree/develop)
 
 # Overview
 Simple WebServer.
