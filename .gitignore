@@ -4,3 +4,4 @@
 *.bat
 *.bin
 /.gradle/
+/build/
