@@ -1,5 +1,7 @@
-master [![CircleCI](https://circleci.com/gh/tami888/WebServer/tree/master.svg?style=svg)](https://circleci.com/gh/tami888/WebServer/tree/master)
-develop [![CircleCI](https://circleci.com/gh/tami888/WebServer/tree/develop.svg?style=svg)](https://circleci.com/gh/tami888/WebServer/tree/develop)
+| ブランチ名|ビルド状況 |
+|:-----------|------------:|
+|  (master)| [![CircleCI](https://circleci.com/gh/tami888/WebServer/tree/master.svg?style=svg)](https://circleci.com/gh/tami888/WebServer/tree/master) |
+|  (develop)|[![CircleCI](https://circleci.com/gh/tami888/WebServer/tree/develop.svg?style=svg)](https://circleci.com/gh/tami888/WebServer/tree/develop)|
 
 # Overview
 Simple WebServer.
