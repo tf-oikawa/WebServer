@@ -1,5 +1,4 @@
 import org.junit.Test;
-import jp.co.topgate.tami.web.main;
 
 import static org.junit.Assert.assertEquals;
 public class test{
