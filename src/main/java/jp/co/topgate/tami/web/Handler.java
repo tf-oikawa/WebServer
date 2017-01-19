@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class Handler {
 
-    public static void handleGET(HTTPRequest httpRequest, HTTPResponse httpResponse){
+    public static void handleGET(HTTPRequest httpRequest, HTTPResponse httpResponse) throws IOException {
 
 
 
@@ -25,7 +25,8 @@ public class Handler {
 
 
         if (file.exists()) {
-            httpResponse.setStatusLine("HTTP/1.1 200 OK");
+//            httpResponse.setStatusLine("HTTP/1.1 200 OK");
+            httpResponse.response(file);
         } else {
             httpResponse.setStatusLine("HTTP/1.1 404 Not Found");
         }

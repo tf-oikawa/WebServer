@@ -220,5 +220,44 @@ public class HTTPResponse {
 
 
 
+    /////////////////////////////////////////////////////////////////////////////////
+    // 参考元）http://codezine.jp/article/detail/170
+    /**
+     * クライアントへOK応答を返す。
+     * @param len コンテンツ長
+     * @param type コンテンツのMIMEタイプ
+     */
+    void responseSuccess(long len, String type, OutputStream outputStream)
+            throws IOException {
+
+        PrintWriter prn = new PrintWriter(outputStream);
+        prn.print("HTTP/1.1 200 OK\r\n");
+        prn.print("Connection: close\r\n");
+        prn.print("Content-Length: ");
+        prn.print(len);
+        prn.print("\r\n");
+        prn.print("Content-Type: ");
+        prn.print(type);
+        prn.print("\r\n\r\n");
+        prn.flush();
+    }
+
+    /**
+     * クライアントへ指定されたファイルを返送する。
+     */
+    void response(File f) throws IOException {
+        responseSuccess((int)f.length(), "text/html", outputStream);
+        BufferedInputStream bi
+                = new BufferedInputStream(new FileInputStream(f));
+        try {
+            for (int c = bi.read(); c >= 0; c = bi.read()) {
+                outputStream.write(c);
+            }
+        } finally {
+            bi.close();
+        }
+    }
+    ////////////////////////////////////////////////////////////////////////////////
+
 
 }
